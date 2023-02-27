@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOSH'S LAB</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="libraries/p5.min.js"></script>
   </head>
   <body>
     <img id="bg-image" src="./images/bg.png"alt="">
@@ -22,7 +23,7 @@
           <p style="margin-top: 30px;">Things about me:</p>
           <ul>
             <li>Currently living in Salt Lake City.</li>
-            <li>My main programming language is Javascript(learning Typescript).</li>
+            <li>My main programming language is Javascript(learning Typescript + Rust).</li>
             <li>I am a former Air Traffic Controller.</li>
             <li>I love traveling and making stained glass windows.</li>
             <li>I hate tomatoes.</li>
@@ -35,19 +36,23 @@
           <img class="sword-icon" src="./images/sword.png" alt="sword icon">
           <h2>PROJECTS</h2>
           <br>
-          <a href="">
+          <a href="https://github.com/joshlakhotia/PortfolioCatacomb">
             <h3>☪ The Catacombs</h3>
           </a>
-          <p>The very site you are on right now! Made as a little test of basic HTML and CSS skills. Much inspiration was taken from <a href="https://dimden.dev">DimDen</a></p>
-          <a href="">
+          <p>The very site you are on right now! Made as a little test of basic HTML and CSS skills. I went with a retro video game vibe bacause thats the look I enjoy most and I think is super unique, especially in today's world of modern websites.</p>
+          <a href="https://github.com/joshlakhotia/DoesItGo">
             <h3>☪ Does It Go</h3>
           </a>
           <p>A full stack PERN database app that displays weather conditions for multiple paragliding launch points on one page. This eliminates the need to hop to several different forecasts to find a flyable launch.</p>
+          <a href="https://github.com/joshlakhotia/CurrentConditionsFlowField">
+            <h3>☪ Weather Flow Field</h3>
+          </a>
+          <p>A p5.js project that takes the current conditions for whatever location you input into the api and returns a flow field that uses those conditions to adjust the flow filed's parameters. Temperature controls color, Wind controls flow angle intensity, etc.</p>
         </section>
       </main>
       <div class="sidebar">
         <section class="box" id="links">
-          <img id="kirby" src="./images/kirby.gif" alt="kirby running">
+          <img id="kirby" src="./images/kirby1.gif" alt="kirby running">
           <h2>LINKS</h2>
           <br>
           <br>
@@ -63,7 +68,15 @@
           <br>
           <a id="email-link" class="navlink" href="mailto:joshlakhotia@protonmail.com">⚔ E-mail</a>
         </section>
+        <section class="box" id="weatherbox">
+          <div id="weather">
+            <img id="weatherkirby" src="./images/kirby.gif" alt="kirby running">
+            <a href="/weather.html"><h2>Weather</h2></a>
+            <p>Conditions in SLC:</p>
+          </div>
+        </section>
       </div>
     </div>
+    <script src="./scripts/sketch.js"></script>
   </body>
 </html>

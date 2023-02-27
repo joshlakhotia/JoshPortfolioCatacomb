@@ -8,7 +8,7 @@
 @font-face {
   font-family: ms_ui_gothic;
   src: url('MS\ Gothic.ttf');
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
 
@@ -23,6 +23,7 @@ body {
   margin: 0;
   image-rendering: pixelated;
   font-family: ms_ui_gothic, tahoma;
+  font-weight: 100;
 }
 
 #bg-image {
@@ -99,7 +100,21 @@ a:hover {
   color: white;
 }
 
-#kirby {
+#weatherkirby {
   width: 40px;
   vertical-align: middle;
+}
+
+#kirby {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px
+}
+
+#weatherbox {
+  width: 215px;
+}
+
+canvas {
+  border: 1px solid #8c53bbcc;
 }

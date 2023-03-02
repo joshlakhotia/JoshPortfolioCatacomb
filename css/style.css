@@ -8,7 +8,7 @@
 @font-face {
   font-family: ms_ui_gothic;
   src: url('MS\ Gothic.ttf');
-  font-weight: lighter;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -35,6 +35,11 @@ body {
   opacity: 25%;
 }
 
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +53,14 @@ main {
 
 .sidebar {
   flex: 1 1 25%;
+}
+
+#links-top {
+  display: none;
+}
+
+#small-links {
+  visibility: collapse;
 }
 
 .box {
@@ -117,4 +130,80 @@ a:hover {
 
 canvas {
   border: 1px solid #8c53bbcc;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 750px;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #links-top {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  #kirby {
+    margin-right: 20px;
+  }
+
+  #links-top h2 {
+    margin-right: 10px
+  }
+
+  #link-list {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #link-list a {
+    margin-right: 10px;
+  }
+
+  #weatherbox { 
+    width: auto;
+    text-align: center;
+  }
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #links-top {
+    display: block;
+    text-align: center;
+  }
+
+  #link-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  #knight {
+    margin: 10px 10px 10px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+
+  #knight {
+    height: 8rem;
+  }
 }
